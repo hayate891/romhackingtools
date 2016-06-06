@@ -138,7 +138,7 @@ public class TileEditor {
 	}
 
 	public static void tileDump(int cols,byte[] buffer) {
-		for (int i=0; i<buffer.length; i+=16+16*cols) {
+		for (int i=0; i<buffer.length; i+=16*cols) {
 			while (buffer.length - i < cols*16)
 				cols--;
 
